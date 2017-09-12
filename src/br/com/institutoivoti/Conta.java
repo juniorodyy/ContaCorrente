@@ -1,5 +1,7 @@
 package br.com.institutoivoti;
 
+import java.util.Scanner;
+
 
 public class Conta {
 
@@ -85,6 +87,23 @@ public class Conta {
     public double Credito(double credito) {
         return this.saldo += credito;
     }
-   
+    
+    public void ImprimeDados() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Nome do titular da conta: ");
+        nome = scan.next();
+        System.out.println("Numero da conta: ");
+        numero = scan.next();
+        System.out.println("Cpf do titular: ");
+        cpf = scan.next();
+        System.out.println("Agencia) ");
+        agencia = scan.next();
+        System.out.println("Dados da conta");
+        System.out.println("Nome: " + nome);
+        System.out.println("Numero da conta: " +numero);
+        System.out.println("Cpf: " + cpf);
+        System.out.println("Agencia: " +agencia);
+        System.out.println("Saldo:" +saldo);
+    }
  
 }
